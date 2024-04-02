@@ -1,4 +1,12 @@
+'use client'
+
 export const Analytic = () => {
+  const scroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
   return (
     <div className="flex items-center justify-center gap-4 py-16 px-4">
       <div className="max-w-[1240px] flex flex-col md:flex-row items-center justify-center gap-4">
@@ -13,7 +21,10 @@ export const Analytic = () => {
             Get insights on your store's performance with our analytics
             dashboard.
           </p>
-          <button className="bg-slate-200 text-black py-2 px-4 rounded-md mt-4">
+          <button
+            className="bg-slate-200 text-black py-2 px-4 rounded-md mt-4"
+            onClick={scroll}
+          >
             Learn More
           </button>
         </div>
