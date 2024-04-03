@@ -1,7 +1,7 @@
 'use client'
 
-import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
 import React, { useEffect, useState } from 'react'
 
 export const Hero = () => {
